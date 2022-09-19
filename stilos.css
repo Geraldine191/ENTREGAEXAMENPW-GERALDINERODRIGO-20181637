@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont-game{
+    height:100px;/*tomamos en cuenta que es el alto de cada casilla debe ser de 100px y el ancho deberá de
+    extenderse hasta ocupar de manera proporcional todo el ancho disponible */
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*lo agregamos si usamos div en ves de boton para centrar */
+    align-items: center;
+    gap:1rem;
+    text-align: center;
+
+}
+
+.game-titulo, .game-info{
+    text-align: center;
+}
+
+.game-cuadricula{
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:0;
+}
+
+.button{
+    width:100px;
+    height: 100PX;
+    border: 1px solid rgb(247, 29, 171);
+    text-align: center;/*lo agregamos si usamos div en ves de boton para centrar */
+    color:rgb(7, 255, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(96, 16, 216);
+    transition: background-color ease-in 0.2s;
+}
+
+.button:hover{
+   
+    background-color:#cccc;
+    
+}
+
+.game-boton{
+    display:inline-flex;
+    padding: 1PX 1PX;
+    background:red ;
+    color: rgb(192, 233, 27);
+    cursor: pointer;
+    justify-content: center;
+    font-weight: bold;
+    transition:color ease-out 0.3s;
+   
+}
+
+.game-boton:hover{
+  
+    background:rgb(209, 255, 4) ;
+    color: red;
+    border: 1px solid red;
+   
+}
